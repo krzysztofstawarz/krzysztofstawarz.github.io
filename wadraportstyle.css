@@ -29,3 +29,8 @@
 	place-items: center;
 	height: 100vh;
 }
+
+#weka {
+	background-image: url("images/output-onlinepngtools (3).png");
+	background-attachment: fixed;
+}
