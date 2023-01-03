@@ -19,3 +19,13 @@
 	padding: 10px;
 	text-align: right;
 }
+
+.link {
+	font-size: 2rem;
+}
+
+#container1 {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
