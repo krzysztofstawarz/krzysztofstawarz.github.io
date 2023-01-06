@@ -17715,7 +17715,7 @@ library(ggpubr)
 library(scales)</code></pre>
 			<div id="rozkład-normalny-gaussa" class="section level2">
 				<h2>Rozkład normalny (Gauss’a)</h2>
-				<pre class="r"><code>#wzorek gauss </code></pre>
+				<img src="https://latex.codecogs.com/svg.image?\large&space;f(x;&space;\mu,&space;\sigma)&space;=&space;\frac{1}{\sqrt{2\pi}\sigma}e^{\frac{-(x-\mu)^{2}}{2\sigma^{2}}}" title="https://latex.codecogs.com/svg.image?\large f(x; \mu, \sigma) = \frac{1}{\sqrt{2\pi}\sigma}e^{\frac{-(x-\mu)^{2}}{2\sigma^{2}}}" /> <br>
 				<p
 					><span class="math inline">\(\sigma^{2}\)</span> (inaczej
 					<span class="math inline">\(\sigma_{x}^{2}\)</span> lub
@@ -17726,13 +17726,13 @@ library(scales)</code></pre>
 					<span class="math inline">\(DX\)</span>) - odchylenie
 					standardowe zmiennej x, dodatkowo pierwiastek kwadratowy z
 					wariancji (<span class="math inline">\(\sqrt{DX^2}\)</span
-					>).<br />
+					>).<br /> 
 					<span class="math inline">\(e\)</span> - liczba Eulera,
 					<span class="math inline">\(\approx 2.71\)</span>, stała
 					matematyczna odnoszona najczęściej do tempa wzrostu.
 					Najczęściej opisywana wzorem</p
 				>
-				<pre class="r"><code>#wzorek e </code></pre>
+				<img src="https://latex.codecogs.com/svg.image?\large&space;e&space;=&space;\displaystyle&space;\lim_{&space;n\to&space;\inf}&space;\left&space;(&space;1&space;-&space;\frac{1}{n}&space;\right&space;)^{n}" title="https://latex.codecogs.com/svg.image?\large e = \displaystyle \lim_{ n\to \inf} \left ( 1 - \frac{1}{n} \right )^{n}" /><br>
 				<p
 					><span class="math inline">\(\mu\)</span> (inaczej
 					<span class="math inline">\(\mu_{x}\)</span> lub
@@ -17862,20 +17862,7 @@ ggarrange(plot1, plot2, plot3, plot4,
 						prawdopodobieństwa to funkcja, przyporządkowująca
 						argumentowi wartość prawdopodobieństwa, że losowo
 						wybrana liczba jest mniejsza bądź równa temu
-						argumentowi. Matematycznie wygląda to następująco:</p
-					>
-					<p>Dla rozkładu zmiennej dyskretnej:</p>
-					<pre
-						class="r"
-					><code>#wzorek dystrybuanta dyskretna</code></pre>
-					<p>Dla rozkładu zmiennej ciągłej:</p>
-					<pre
-						class="r"
-					><code>#wzorek dystrybuanta ciągła</code></pre>
-					<p>Dla rozkładu normalnego:</p>
-					<pre
-						class="r"
-					><code>#wzorek dystrybuanta normalny</code></pre>
+						argumentowi. </p>
 					<p
 						>W R do liczenia dystrybuanty służy funkcja
 						<strong>pnorm()</strong>. Sprawdźmy, czy reguła
@@ -18052,7 +18039,7 @@ all.equal(x, z)</code></pre>
 					prawdopodobieństwo porażki (1 - p).<br />
 					Funkcja gęstości rozkładu dwumianowego:</p
 				>
-				<pre class="r"><code>#wzorek_rozklad_bernouliego</code></pre>
+				<img src="https://latex.codecogs.com/svg.image?\large&space;p(x;&space;\mu,&space;\sigma)&space;=&space;\binom{n}{x}p^{x}\left&space;(&space;1-p&space;\right&space;)^{n-x}" title="https://latex.codecogs.com/svg.image?\large p(x; \mu, \sigma) = \binom{n}{x}p^{x}\left ( 1-p \right )^{n-x}" /> <br>
 				<p
 					>Aby zasymulować przykładowo liczbę sukcesów dla 10 prób
 					przy prawdopodobieństwie sukcesu wynoszącym 0.4, możemy użyć
@@ -18103,9 +18090,7 @@ annotate_figure(main_p, top = text_grob(&quot;histogramy\nn eksperymentów, 10 p
 					class="section level3"
 				>
 					<h3>Dystrybuanta rozkładu dwumianowego</h3>
-					<pre
-						class="r"
-					><code>#wzorek_dystrybuanta_rozkladu_dwumianowego</code></pre>
+					<img src="https://latex.codecogs.com/svg.image?\large&space;F(a;&space;n,&space;p)&space;=&space;P\left\{&space;X&space;<=&space;a&space;\right\}&space;=&space;\sum_{i=0}^{a}&space;\binom{n}{i}p^{i}\left&space;(&space;1-p&space;\right&space;)^{n-i}" title="https://latex.codecogs.com/svg.image?\large F(a; n, p) = P\left\{ X <= a \right\} = \sum_{i=0}^{a} \binom{n}{i}p^{i}\left ( 1-p \right )^{n-i}" /> <br>
 					<p
 						>Dystrybuanta owa mówi nam o ilości sukcesów
 						NIE-WIEKSZEJ niż argument do niej podany. Do liczenia
@@ -18156,9 +18141,9 @@ ggarrange(p1, p2,
 					upłynął od ostatniego zajścia takiego zdarzenia.<br />
 					Wzór na funkcję gęstości prawdopodobieństwa:</p
 				>
-				<pre class="r"><code>#wzorek_rozklad_poissona</code></pre>
+				<img src="https://latex.codecogs.com/svg.image?\large&space;p(x;&space;\lambda)&space;=&space;\frac{\lambda^{x}e^{-\lambda}}{x!}" title="https://latex.codecogs.com/svg.image?\large p(x; \lambda) = \frac{\lambda^{x}e^{-\lambda}}{x!}" /><br>
 				<p>Oraz na dystrybuante:</p>
-				<pre class="r"><code>#wzorek_dystrybuanta_poissona</code></pre>
+				<img src="https://latex.codecogs.com/svg.image?\large&space;F(a;&space;\lambda)&space;=&space;P\left\{&space;X&space;<=&space;a&space;\right\}&space;=&space;\sum_{i=0}^{a}&space;\frac{\lambda^{i}e^{-\lambda}}{i!}" title="https://latex.codecogs.com/svg.image?\large F(a; \lambda) = P\left\{ X <= a \right\} = \sum_{i=0}^{a} \frac{\lambda^{i}e^{-\lambda}}{i!}" /><br>
 				<p
 					>Są też inne testy statystyczne, ale w tym raporcie nie mam
 					ochoty się nimi zajmować. Jak będą kiedyś potrzebne to
